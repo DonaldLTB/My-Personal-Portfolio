@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- INSERT GOOGLE ANALYTICS HERE -->
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio</title>
+    <!-- Comment this out when meta tags configured -->
+    <%#= display_meta_tags %>
+    <%= favicon_tag 'favicon.ico' %>
+    <%= stylesheet_link_tag "app" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag "bundle" %>
+  </body>
+</html>
