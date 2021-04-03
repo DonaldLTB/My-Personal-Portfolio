@@ -1,0 +1,51 @@
+.navigation-buttons {
+  flex-wrap: wrap;
+}
+
+.navigation-button {
+  padding: 0 16px;
+  position: relative;
+  font-size: 20px;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.navigation-button-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btn-dark {
+  color: $dark-gray;
+  color: white;
+}
+
+.nav-group {
+  display: flex;
+  margin: 20px 0 0 20px;
+  align-items: center;
+  position: relative;
+}
+
+.nav-group-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 66px;
+}
+.nav-arrow {
+  font-size: 32px;
+}
+
+.link-gray {
+  color: $normal-gray;
+  &:hover {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+}
