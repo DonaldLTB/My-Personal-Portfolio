@@ -2,10 +2,12 @@
   <div class="row">
     <div class="col-12">
       <div class="main-container" id="about">
-        <h2>Hello 👋</h2>
-        <p>I'm a passioned full stack developer with a looong love towards computers. I'm based out of Tokyo, but originally from Germany. Fluent in English, Japanese and German!</p>
-        <p>If you are interested in my profile, you can check my linkedIn out:</p>
-        <% link_to "https://jp.linkedin.com/in/lawrence-kroll", target: '_blank'
+        <h2>めんそーれー 👋</h2>
+        <p>熱心でパソコン大好きなFull Stack Developerです。 ドイツ出身で現在は東京に住居しています。日本語、英語、ドイツ語は流暢です。</p>
+        <p>某のLinkedInプロファイルは以下にご覧ください:</p>
+        <% link_to "https://jp.linkedin.com/in/lawrence-kroll", target: '_blank' do %>
+          <%= image_tag "back.jpg", alt: "alttext", style: 'width:100%' %>
+        <% end %>
       </div>
     </div>
   </div>
