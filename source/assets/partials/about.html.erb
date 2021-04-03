@@ -5,7 +5,9 @@
         <h2>Hello 👋</h2>
         <p>I'm a passioned full stack developer with a looong love towards computers. I'm based out of Tokyo, but originally from Germany. Fluent in English, Japanese and German!</p>
         <p>If you are interested in my story, you can check this out:</p>
-        <% link_to "https://jp.linkedin.com/in/lawrence-kroll", target: '_blank'
+        <% link_to "https://jp.linkedin.com/in/lawrence-kroll", target: '_blank' do %>
+          <%= image_tag "back.jpg", alt: "alttext", style: 'width:100%' %>
+        <% end %>
       </div>
     </div>
   </div>
