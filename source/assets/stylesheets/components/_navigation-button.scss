@@ -20,7 +20,7 @@
 }
 
 .btn-dark {
-  color: $dark-gray;
+  color: gray;
   color: white;
 }
 
@@ -43,9 +43,9 @@
 }
 
 .link-gray {
-  color: $normal-gray;
+  color: gray;
   &:hover {
     text-decoration: none;
-    color: $dark-gray;
+    color: rgba(128, 128, 128, 0.349);
   }
 }
