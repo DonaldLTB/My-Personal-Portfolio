@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $gray;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+  }
+  
+  iframe {
+    width: 100%;
+    min-height: 400px;
+  }
