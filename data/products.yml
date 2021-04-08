@@ -1,4 +1,11 @@
-- name: Some product
-  image: some_product.png
+- name: Clanparty
+  description: Clanparty helps you find and create teams to play with on your schedule!
+  image: Clanparty.png
+  url: http://www.clanparty.net/
+  tags:
+    - devicon-rails-plain-wordmark
+    - devicon-postgresql-plain-wordmark
+    - devicon-heroku-original
+    - devicon-javascript-plain
 - name: Other product
   image: other_product.png
