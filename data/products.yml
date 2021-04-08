@@ -3,9 +3,6 @@
   image: Clanparty.png
   url: http://www.clanparty.net/
   tags:
-    - devicon-rails-plain-wordmark
-    - devicon-postgresql-plain-wordmark
-    - devicon-heroku-original
-    - devicon-javascript-plain
-- name: Other product
-  image: other_product.png
+    - devicon-rails-plain-wordmark colored
+    - devicon-heroku-original colored
+    - devicon-javascript-plain colored
