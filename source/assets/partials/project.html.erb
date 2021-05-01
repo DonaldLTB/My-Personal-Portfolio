@@ -2,25 +2,30 @@
   <div class="row">
     <div class="col-12">
       <div class="main-container" id="projects" style="margin-bottom: 0;background-color: transparent;padding-bottom: 0">
-        <h2>プロジェクト</h2>
-        <p>個人のプロジェクトリストです。</p>
+        <h2>プロジェクト:</h2>
+        <!-- <p>個人のプロジェクトリストです。</p> -->
       </div>
      <div class="cards" style="padding-top: 4px;">
         <% data.products.each do |product| %>
-          <div>
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
-              <div class="card-description">
-                <h5><%= product.name %></h5>
-                <p><%= product.description %></p>
-                <div class="d-flex justify-content-between align-items-center mt-1">
-                  <div class="card-tags">
-                    <% product.tags.each do |tag| %>
-                      <svg class="card-tags" viewBox="0 0 128 128"><%= tag %></svg>
+          <div class="card" onclick="flip(event)">
+            <div class="front">
+              test!
+            </div>
+            <div class="back">
+              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
+                <div class="card-description">
+                  <h5><%= product.name %></h5>
+                  <p><%= product.description %></p>
+                  <div class="d-flex justify-content-between align-items-center mt-1">
+                    <div class="card-tags">
+                      <% product.tags.each do |tag| %>
+                        <svg class="card-tags" viewBox="0 0 128 128"><%= tag %></svg>
+                      <% end %>
+                    </div>
+                    <% link_to product.url, class: 'external-link', target: '_blank' do %>
+                      <i class="fas fa-external-link-alt"></i>
                     <% end %>
                   </div>
-                  <% link_to product.url, class: 'external-link', target: '_blank' do %>
-                    <i class="fas fa-external-link-alt"></i>
-                  <% end %>
                 </div>
               </div>
             </div>
@@ -30,3 +35,16 @@
     </div>
   </div>
 </div>
+<script>
+  function flip(event) {
+  const element = event.currentTarget;
+  if (element.className === 'card') {
+    if (element.style.transform === 'rotateY(180deg)') {
+      element.style.transform = 'rotateY(0deg)';
+    }
+    else {
+      element.style.transform = 'rotateY(180deg)';
+    }
+  }
+};
+</script>
