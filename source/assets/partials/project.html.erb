@@ -7,7 +7,7 @@
       </div>
      <div class="cards" style="padding-top: 4px;">
         <% data.products.each do |product| %>
-          <div>
+          <div class="card" onclick="flip(event)">
             <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
               <div class="card-description">
                 <h5><%= product.name %></h5>
@@ -30,3 +30,16 @@
     </div>
   </div>
 </div>
+<script>
+  function flip(event) {
+  const element = event.currentTarget;
+  if (element.className === 'card') {
+    if (element.style.transform === 'rotateY(180deg)') {
+      element.style.transform = 'rotateY(0deg)';
+    }
+    else {
+      element.style.transform = 'rotateY(180deg)';
+    }
+  }
+};
+</script>
