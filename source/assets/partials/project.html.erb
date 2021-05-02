@@ -5,14 +5,15 @@
         <h2>プロジェクト:</h2>
         <!-- <p>個人のプロジェクトリストです。</p> -->
       </div>
-     <div class="cards" style="padding-top: 4px;">
+      <div class="cards">
         <% data.products.each do |product| %>
-          <div class="card" onclick="flip(event)">
-            <div class="front">
-              test!
+          <div class="card-flip" onclick="flip(event)">
+            <div class="front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
+              <!-- This is the front -->
+              <!-- <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
+              </div> -->
             </div>
             <div class="back">
-              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
                 <div class="card-description">
                   <h5><%= product.name %></h5>
                   <p><%= product.description %></p>
@@ -27,7 +28,6 @@
                     <% end %>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         <% end %>
@@ -38,7 +38,7 @@
 <script>
   function flip(event) {
   const element = event.currentTarget;
-  if (element.className === 'card') {
+  if (element.className === 'card-flip') {
     if (element.style.transform === 'rotateY(180deg)') {
       element.style.transform = 'rotateY(0deg)';
     }
