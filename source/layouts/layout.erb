@@ -13,8 +13,17 @@
 
     <title>Portfolio</title>
     <!-- Comment this out when meta tags configured -->
-    <%= display_meta_tags %>
-    <%#= favicon_tag 'personal.png' %>
+    <meta name=“description” content="自己紹介とプロジェクト">
+    <meta name=“keywords” content="Lawrence Kroll, Ruby on Rails, JavaScript">
+    <meta name=“author” content="Lawrence Kroll">
+
+    <meta property="og:title" content="Lawrence Kroll - Web Developer">
+    <meta property="og:description" content="自己紹介とプロジェクト">
+    <meta property="og:image" content="pimg.png">
+    <!-- <meta property="og:url" content="http://www.hll-jpn.net"> -->
+    <meta property="og:type" content="website">
+    <%#= display_meta_tags %>
+    <%= favicon_tag 'personal.png' %>
     <%= stylesheet_link_tag "app" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   </head>
