@@ -34,6 +34,10 @@
     body {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
+    .background {
+      height:100vh;//Add 100vh
+      background-position: center;
+    }
   }
   @media screen and (min-width: 1000px) {
     body {
