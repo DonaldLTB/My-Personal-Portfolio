@@ -35,13 +35,21 @@
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
     .background {
-      height:100vh;//Add 100vh
-      background-position: center;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1520550870159-a325180cd072?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
     }
   }
   @media screen and (min-width: 1000px) {
     body {
       font-size: 54px;
+    }
+    .background {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1520550870159-a325180cd072?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
     }
   }
 
