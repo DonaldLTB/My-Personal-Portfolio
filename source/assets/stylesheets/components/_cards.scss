@@ -3,15 +3,15 @@
   transform-style: preserve-3d;
   cursor: pointer;
   // margin: 20px;
-  width: 450px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   // perspective: 1000px;
   // flex-wrap: wrap;
 }
 
 .front {
-  height: 300px;
-  width: 450px;
+  height: 200px;
+  width: 300px;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(to right, red , blue);
@@ -35,9 +35,10 @@
 
 .back {
   // position: absolute;
-  height: 300px;
-  width: 450px;
+  height: 200px;
+  width: 300px;
   transform: rotateY(180deg);
+  padding: 10px;
 }
 
 .back:hover {
@@ -101,7 +102,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   // background-color: white;
-  padding: 24px;
+  padding: 81px;
   padding-top: 4px;
 }
 
