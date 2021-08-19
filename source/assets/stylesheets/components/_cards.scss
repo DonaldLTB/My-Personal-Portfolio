@@ -2,11 +2,8 @@
   transition: transform 2s;
   transform-style: preserve-3d;
   cursor: pointer;
-  // margin: 20px;
   width: 225px;
   height: 150px;
-  // perspective: 1000px;
-  // flex-wrap: wrap;
 }
 
 .front {
@@ -51,13 +48,8 @@
   background-size: cover;
   background-position: center;
   height: 240px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  // position: relative;
-  // margin-bottom: 7em;
 }
 
 .card-category:hover {
@@ -67,15 +59,6 @@
 }
 
 .card-description {
-  // background-color: white;
-  // // padding: 24px;
-  // // margin-top: -24px;
-  // position: absolute;
-  // // bottom: -108px;
-  // // width: 85%;
-  // border-radius: 5px;
-  // // height: 154px;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,10 +84,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
-  // background-color: white;
-  // padding: 81px;
   padding-top: 4px;
-  // margin-left: 1em;
   margin-bottom: 1em;
   width: fit-content;
 }

@@ -4,15 +4,11 @@
       <div class="main-container" id="projects" style="margin-bottom: 0;background-color: transparent;padding-bottom: 0">
         <h2>プロジェクト:</h2>
         <p>(写真クリック)</p>
-        <!-- <p>個人のプロジェクトリストです。</p> -->
       
       <div class="cards">
         <% data.products.each do |product| %>
           <div class="card-flip" onclick="flip(event)">
             <div class="front" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
-              <!-- This is the front -->
-              <!-- <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
-              </div> -->
             </div>
             <div class="back">
                 <div class="card-description">
